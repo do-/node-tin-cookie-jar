@@ -1,0 +1,52 @@
+{
+  "name": "tin-cookie-jar",
+  "version": "1.0.0",
+  "description": "Yet another client side HTTP cookies CJS module for node.js",
+  "main": "index.js",
+  "files": [
+    "/lib",
+    "/badges"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test-ci": "jest --ci --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      "text",
+      "json-summary"
+    ],
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/data",
+      "/__tests__/lib"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/do-/node-tin-cookie-jar.git"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "cookie",
+    "jar",
+    "commonjs"
+  ],
+  "author": "Dmitry Ovsyanko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/do-/node-tin-cookie-jar/issues"
+  },
+  "homepage": "https://github.com/do-/node-tin-cookie-jar#readme"
+}
