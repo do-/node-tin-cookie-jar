@@ -1,0 +1,19 @@
+name: unit tests
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install modules
+      run: npm install
+    - name: Run tests
+      run: npm run test-ci
+    - name: Generating coverage badges
+      uses: jpb06/jest-badges-action@latest
